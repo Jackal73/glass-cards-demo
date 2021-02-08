@@ -6,16 +6,54 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Glass Cards</title>
-        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="container">
+            <div class="row">
+            <div class="col-1-of-3">
             <div class="card">
                 <div class="content">
-                    <h2>01</h2>
-                    <h3>Card One</h3>
+                    <i class="feature-box-icon icon-basic-world"></i>
+                    <h2 class="heading-tertiary u-margin-bottom-small ">Explore the world</h2>
+                    <p class="feature-box__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius est Aiello magni presenting
+                        quo velvet.
+                    </p>
+                    <a href="#">Read More</a>
                 </div>
             </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="content">
+                        <i class="feature-box-icon icon-basic-map"></i>
+                        <h2 class="heading-tertiary u-margin-bottom-small ">Find Your Way</h2>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius est Aiello magni presenting
+                            quo velvet.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="content">
+                        <i class="feature-box-icon icon-basic-compass"></i>
+                        <h2 class="heading-tertiary u-margin-bottom-small ">Meet Nature</h2>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius est Aiello magni presenting
+                            quo velvet.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+                </div>
         </div>
 
 
@@ -23,6 +61,14 @@
 
 
 
-
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
     </body>
 </html>
